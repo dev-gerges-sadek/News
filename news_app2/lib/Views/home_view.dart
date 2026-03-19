@@ -1,7 +1,6 @@
-// ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:news_app2/Widgets/categories_List_View.dart';
-import 'package:news_app2/Widgets/news_list_view.dart';
+import 'package:news_app2/Widgets/news_list_view_builder.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -38,7 +37,7 @@ class Homepage extends StatelessWidget {
               child: SizedBox(height: 90, child: GategoriesListView()),
             ),
             const SliverToBoxAdapter(child: SizedBox(height: 10)),
-            NewsListView(articles: [],),
+            NewsListViewBuilder(category: 'general'),
           ],
         ),
       ),

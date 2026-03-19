@@ -8,7 +8,11 @@ class GategoriesListView extends StatelessWidget {
   GategoriesListView({super.key});
   final List<CategoriesModel> categories = [
     CategoriesModel(
-      categoryName: "Entertaiment",
+      categoryName: "General",
+      categoryimage: "assets/general.avif",
+    ),
+    CategoriesModel(
+      categoryName: "Entertainment",
       categoryimage: "assets/entertaiment.avif",
     ),
     CategoriesModel(
@@ -31,10 +35,6 @@ class GategoriesListView extends StatelessWidget {
     CategoriesModel(
       categoryName: "Technology",
       categoryimage: "assets/technology.jpeg",
-    ),
-    CategoriesModel(
-      categoryName: "General",
-      categoryimage: "assets/general.avif",
     ),
   ];
   @override

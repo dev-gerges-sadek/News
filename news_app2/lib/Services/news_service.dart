@@ -6,32 +6,21 @@ class NewsService {
 
   NewsService(this.dio);
 
-  Future<List<ArticleModel>> getNews() async {
+  Future<List<ArticleModel>> getNews({required String category}) async {
     try {
       var response = await dio.get(
-        'https://newsapi.org/v2/top-headlines?country=us&apiKey=d4a93323ab804912bcd4beb75e3d467f',
+        'https://newsapi.org/v2/top-headlines?country=us&apiKey=d4a93323ab804912bcd4beb75e3d467f&category=$category',
       );
 
-      Map<String, dynamic> jsonData = response.data;
-      List<dynamic> articles = jsonData['articles'];
+      List<dynamic> articles = response.data['articles'];
 
-      List<ArticleModel> articleModels = [];
+      List<ArticleModel> articleList = articles
+          .map((article) => ArticleModel.fromMap(article))
+          .toList();
 
-      for (var article in articles) {
-        ArticleModel articleModel = ArticleModel(
-          title: article['title'] ?? "no title",
-          description: article['description'] ?? "no description",
-          urlToImage:
-              article['urlToImage'] ?? "https://via.placeholder.com/150",
-          publishedAt: article['publishedAt'] ?? "no date",
-          content: article['content'] ?? "no content",
-        );
-
-        articleModels.add(articleModel);
-      }
-      return articleModels;
+      return articleList;
     } catch (e) {
-      rethrow;
+      throw Exception('Failed to load news: $e');
     }
   }
 }
