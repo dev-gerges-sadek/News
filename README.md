@@ -95,9 +95,9 @@ flutter run
 
 ## 📸 Screenshots
 
-![Uploading Screenshot_1773935414.png…]()
-![Uploading Screenshot_1773935405.png…]()
+<img width="1080" height="2280" alt="Screenshot_1773935414" src="https://github.com/user-attachments/assets/3511d449-e0f6-4e62-a88b-e9ceb7e5aeb1" />
 
+<img width="1080" height="2280" alt="Screenshot_1773935405" src="https://github.com/user-attachments/assets/e51abf5c-831e-4002-8401-4c909bbc7ffd" />
 
 ---
 
