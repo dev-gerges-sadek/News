@@ -95,8 +95,8 @@ flutter run
 
 ## 📸 Screenshots
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3511d449-e0f6-4e62-a88b-e9ceb7e5aeb1" width="260" style="border-radius: 20px; margin-right: 15px;" />
-  <img src="https://github.com/user-attachments/assets/e51abf5c-831e-4002-8401-4c909bbc7ffd" width="260" style="border-radius: 20px; margin-right: 15px;" />
+  <img src="https://github.com/user-attachments/assets/3511d449-e0f6-4e62-a88b-e9ceb7e5aeb1" width="260" style="border-radius: 50px; margin-right: 30px;" />
+  <img src="https://github.com/user-attachments/assets/e51abf5c-831e-4002-8401-4c909bbc7ffd" width="260" style="border-radius: 50px; margin-right: 30px;" />
 </p>
 
 ---
